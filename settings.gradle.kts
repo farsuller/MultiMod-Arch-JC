@@ -14,11 +14,11 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "MultiModularArch-JC"
-include ':app'
-include ':onetap'
-include ':core:ui'
-include ':core:util'
-include ':data:mongo'
-include ':feature:auth'
-include ':feature:home'
-include ':feature:note'
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+include (":app")
+include (":core:ui")
+include (":core:util")
+include (":data:mongo")
+include (":feature:auth")
+include (":feature:home")
+include (":feature:note")

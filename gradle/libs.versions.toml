@@ -1,37 +1,52 @@
 [versions]
-compose = "1.4.6"
+
+#plugins
+androidApplication = "8.1.1"
+androidLibrary = "8.1.1"
+kotlinAndroid = "1.9.22"
+ktlint = "11.6.0"
+kotlinJvm = "1.8.10"
+
+hilt = "2.50"
+realm = "1.11.0"
+googleServices = "4.4.1"
+androidTest = "8.1.4"
+devtoolKsp = "1.9.10-1.0.13"
+
+#libraries
+compose = "1.6.3"
 kotlin = "1.8.20"
 core-ktx = "1.12.0"
-lifecycle-runtime = "2.6.2"
-activity-compose = "1.7.2"
-material-icons-extended = "1.5.4"
-material3-compose = "1.2.0-alpha08"
+lifecycle-runtime = "2.7.0"
+activity-compose = "1.8.2"
+material-icons-extended = "1.6.3"
+material3-compose = "1.2.1"
 junit = "4.13.2"
 junit-ext = "1.1.5"
 espresso = "3.5.1"
-firebase-auth = "22.1.2"
-firebase-storage = "20.2.1"
-navigation-compose = "2.7.5"
-room = "2.5.2"
-runtime-compose = "2.6.2"
+firebase-auth = "22.3.1"
+firebase-storage = "20.3.0"
+navigation-compose = "2.7.7"
+room = "2.6.1"
+runtime-compose = "2.7.0"
 splash = "1.0.1"
-realm = "1.11.0"
 kotlin-coroutines-core = "1.7.1"
-dagger-hilt = "2.48"
-hilt-navigation-compose = "1.1.0"
-coil = "2.3.0"
+dagger-hilt = "2.50"
+hilt-navigation-compose = "1.2.0"
+coil = "2.5.0"
 leakcanary-android = "2.12"
 profileinstaller = "1.3.1"
-# [DEPRECATED]
-#accompanist = "0.27.0"
+
+
 date-time-picker = "1.2.0"
 message-bar-compose = "1.0.5"
 one-tap-compose = "1.0.9"
-desugar = "2.0.3"
-agp = "8.1.1"
-kotlin1910 = "1.9.10"
+desugar = "2.0.4"
+
 appcompat = "1.6.1"
 material = "1.11.0"
+spotless = "6.19.0"
+kotlinCompilerExtensionVersion = "1.5.10"
 
 [libraries]
 core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx"}
@@ -48,7 +63,7 @@ espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref =
 compose-ui-test = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose"}
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose"}
 compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose"}
-
+spotless = { group = "com.diffplug.spotless", name = "spotless-plugin-gradle", version.ref = "spotless" }
 firebase-auth = { module = "com.google.firebase:firebase-auth-ktx", version.ref = "firebase-auth"}
 firebase-storage = { module = "com.google.firebase:firebase-storage-ktx", version.ref = "firebase-storage"}
 navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation-compose" }
@@ -64,8 +79,7 @@ hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "dagge
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "dagger-hilt"}
 hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose"}
 coil = { module = "io.coil-kt:coil-compose", version.ref = "coil"}
-# [DEPRECATED]
-#accompanist-pager = { module = "com.google.accompanist:accompanist-pager", version.ref = "accompanist"}
+
 date-time-picker = { module = "com.maxkeppeler.sheets-compose-dialogs:core", version.ref = "date-time-picker"}
 date-dialog = { module = "com.maxkeppeler.sheets-compose-dialogs:calendar", version.ref = "date-time-picker"}
 time-dialog = { module = "com.maxkeppeler.sheets-compose-dialogs:clock", version.ref = "date-time-picker"}
@@ -74,6 +88,16 @@ one-tap-compose = { module = "com.github.stevdza-san:OneTapCompose", version.ref
 desugar-jdk = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar"}
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
 [plugins]
-androidLibrary = { id = "com.android.library", version.ref = "agp" }
-kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin1910" }
+android-application = { id = "com.android.application", version.ref = "androidApplication" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinAndroid" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinJvm" }
+android-library = { id = "com.android.library", version.ref = "androidLibrary" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+realm-kotlin = { id = "io.realm.kotlin", version.ref = "realm" }
+gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+android-test = { id = "com.android.test", version.ref = "androidTest" }
+devtool-ksp = { id = "com.google.devtools.ksp", version.ref = "devtoolKsp" }

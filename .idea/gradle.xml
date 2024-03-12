@@ -31,7 +31,6 @@
             <option value="$PROJECT_DIR$/feature/auth" />
             <option value="$PROJECT_DIR$/feature/home" />
             <option value="$PROJECT_DIR$/feature/note" />
-            <option value="$PROJECT_DIR$/onetap" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

@@ -1,19 +1,17 @@
 object ProjectConfig {
-    const val appFileName = "soloscape"
-    const val applicationId = "com.soloscape.compose"
+    const val AppFileName = "soloscape"
+    const val ApplicationId = "com.soloscape.compose"
 
-    const val namespace = "com.compose.soloscape"
+    const val Namespace = "com.compose.soloscape"
 
-    const val compileSdk = 34
-    const val minSdk = 24
-    const val targetSdk = 34
+    const val CompileSdk = 34
+    const val MinSdk = 24
+    const val TargetSdk = 34
 
-    const val extensionVersion = "1.4.6"
+    const val VersionCode = 3
 
-    const val versionCode = 3
-
-    const val majorVersion = 1
-    const val minorVersion = 0
-    const val patchVersion = 0
+    const val MajorVersion = 1
+    const val MinorVersion = 0
+    const val PatchVersion = 0
 
 }

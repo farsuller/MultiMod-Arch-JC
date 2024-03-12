@@ -1,7 +1,6 @@
-package com.soloscape.mongo.model
+package com.soloscape.util.model
 
 import android.annotation.SuppressLint
-import com.soloscape.util.model.Mood
 import com.soloscape.util.toRealmInstant
 import io.realm.kotlin.ext.realmListOf
 import io.realm.kotlin.types.RealmInstant
